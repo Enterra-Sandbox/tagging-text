@@ -12,14 +12,33 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<opennlp-tools.version>1.5.3</opennlp-tools.version>
+		<opennlp-maxent.version>3.0.3</opennlp-maxent.version>
 	</properties>
 
 	<dependencies>
+		<!-- OpenNLP -->
+		<dependency>
+			<groupId>org.apache.opennlp</groupId>
+			<artifactId>opennlp-tools</artifactId>
+			<version>${opennlp-tools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.opennlp</groupId>
+			<artifactId>opennlp-maxent</artifactId>
+			<version>${opennlp-maxent.version}</version>
+		</dependency>
+		<!-- End OpenNLP -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>16.0</version>
 		</dependency>
 	</dependencies>
 	<build>
